@@ -30,6 +30,7 @@ def p():
     if c is None:
         return render_template('p.html')
 
+    print  c
     c_encoded = c.encode('gbk')
     open(LP_PATH, 'w').write(c_encoded + '\n'*5)
     
